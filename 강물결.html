@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>La Dolce Villa</title>
+  <style>
+    body {
+      margin: 80px;
+      font-family: 'Georgia', serif;
+      color: #333;
+      background: #fff;
+    }
+
+    .main-title {
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 60px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    .left-column,
+    .right-column {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .center-column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .center-column p,
+    .sub-paragraph {
+      line-height: 1.7;
+      font-size: 16px;
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .image-box {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .image-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .bottom-border {
+      border: none;
+      border-top: 1px solid #ccc;
+      width: 300px;
+      margin-top: 20px;
+      margin-bottom: 4px;
+    }
+
+    .sub-title {
+      font-family: 'Georgia', serif;
+      font-size: 24px;
+      font-weight: 300;
+      text-align: center;
+      color: #555;
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    .quote-box {
+      width: 300px;
+      text-align: left;
+      font-size: 14px;
+      font-style: italic;
+      color: #777;
+      margin-top: 0;
+      margin-left: 20px;
+    }
+
+    .link-box {
+      font-size: 14px;
+      margin-top: 4px;
+      width: 300px;
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    .link-box a {
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+    }
+
+    .link-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #ddd;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+      margin-top: auto;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-title">Travel</div>
+
+  <div class="content">
+    <!-- 왼쪽 이미지 -->
+    <div class="left-column">
+      <div class="image-box">
+        <img src="https://i.imgur.com/fTJyyzL.jpg" alt="Image1">
+      </div>
+      <hr class="bottom-border">
+      <div class="quote-box">
+        “If you don’t know where you’re going, any road will take you there.”<br>— <strong>Any Road</strong>
+      </div>
+      <div class="link-box">
+        <a href="https://www.elle.co.kr/" target="_blank">Elle.korea</a>
+      </div>
+      <hr class="bottom-border">
+    </div>
+
+    <!-- 본문 -->
+    <div class="center-column">
+      <p>
+        Villa Beatrice sits perched on a cliff, with a 180-degree view of one of the most stunning, secluded settings imaginable.
+        Turn to the right, and you see the Bay of Portofino. Look left, and it’s the Bay of Paraggi.
+      </p>
+      <div class="sub-title">LA DOLCE VILLA</div>
+      <p class="sub-paragraph">
+        The restored former palazzo, which is set within a national park and has private access to the sea,
+        will be available to rent beginning this July for the first time in its 112-year history.
+        It’s the only accommodation of its kind for the hospitality group Belmond,
+        which specializes in resorts, trains, river cruises, and safari lodges that recapture the glamour of an earlier era of travel.
+      </p>
+    </div>
+
+    <!-- 오른쪽 이미지 -->
+    <div class="right-column">
+      <div class="image-box">
+        <img src="https://i.imgur.com/9OcMOKo.jpg" alt="Image2">
+      </div>
+      <div class="image-box">
+        <img src="https://i.imgur.com/TCQ81ZU.jpg" alt="Image3">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 High Fashion. All rights reserved.
+    <p>JI     MG      JS      HS       DA</p>
+  </footer>
+
+</body>
+</html>

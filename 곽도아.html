@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ELLEextra</title>
+  <style>
+      footer{
+      background-color: #ddd; /* 짙은 회색 */
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+      margin-top: auto; /* 레이아웃이 차지하는 공간 뒤에 붙도록 */
+      user-select: none;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      width: 1920px;
+      height: 1080px;
+      background: white;
+      color: #000;
+      padding: 40px;
+      position: relative;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 64px;
+      font-weight: 500;
+      letter-spacing: -2px;
+    }
+
+    header .meta {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+
+    header .date {
+      font-size: 12px;
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+
+    .divider {
+      border-top: 1px solid black;
+      margin: 20px 0;
+    }
+
+    .image-pair {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      gap: 20px;
+      position: relative;
+    }
+
+    .left-images {
+      display: flex;
+      gap: 20px;
+      align-items: flex-end;
+      position: relative;
+      padding-bottom: 10px;
+      margin-right: 5px;
+    }
+
+    #left-img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+    /* cruise-img를 포함하는 div에 position: relative 추가 */
+    .cruise-container {
+      position: relative;
+      width: 200px;
+      height: auto;
+    }
+
+    #cruise-img {
+      width: 200px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* 이미지 바로 위 바깥에 Front Row 텍스트 */
+    .front-row-text {
+      position: absolute;
+      bottom: 100%;      /* 이미지 바로 위 */
+      left: 0;
+      margin-bottom: 10px; /* 이미지 위에서 10px 띄우기 */
+      font-family: 'Georgia', serif;
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* cruise-caption 기존 텍스트 */
+    .cruise-caption {
+      position: absolute;
+      left: 220px;
+      bottom: -130px;
+      width: 350px;
+      font-size: 14px;
+      line-height: 1.4;
+      margin-left: 440px;
+    }
+
+    /* 새로 추가하는 텍스트 박스 */
+    .cruise-text {
+      position: absolute;
+      bottom: 0;
+      left: 210px;
+      width: 350px;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 10px;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+      color: #000;
+      font-size: 14px;
+      line-height: 1.4;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      pointer-events: none;
+    }
+
+    .cruise-text .title {
+      font-weight: bold;
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+
+    .right-image {
+      width: 600px;
+      height: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .bottom-left-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    #bottom-left-img {
+      width: 250px;
+      height: auto;
+      position: relative;
+      top: 40px;
+    }
+
+    .bottom-text {
+      margin-left: 20px;
+      max-width: 600px;
+    }
+
+    .bottom-text .title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .bottom-text .body {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 30px;
+      border-top: 1px solid black;
+      padding-top: 10px;
+    }
+
+    footer a {
+      color: #e60073;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="meta">Promotion</div>
+    <h1>ELLEextra</h1>
+    <div class="date">May 2025</div>
+  </header>
+
+  <div class="divider"></div>
+
+  <!— 이미지 영역 —>
+  <div class="image-pair">
+    <div class="left-images">
+      <img id="left-img" src="https://i.imgur.com/h9Pbg7v.jpeg" alt="Woman in activewear" />
+      <div class="cruise-container">
+        <img id="cruise-img" src="https://i.imgur.com/dU4W2kC.jpeg" alt="Woman on cruise" />
+
+        <!— 이미지 바로 위 바깥에 텍스트 —>
+        <div class="front-row-text">Front Row</div>
+
+        <!— 기존 텍스트 —>
+        <div class="cruise-caption">
+          I tall unfurled over the course of about a month. In August 2010, Lady Gaga became the most-followed person on the platform we then called Twitter. Not long after, she was beamed into the homes of 11.4 million MTV viewers during the VMAs, wearing 35 pounds of raw flank steak. Over the next couple of days, the app made a critical update: For the first time, photos and videos could be embedded in tweets, and new posts began to populate the feed via an addictive, slot machine-style feature, now known as the "infinite scroll." It buoyed conversation about the meat dress, already one
+        </div>
+
+        <!— 새로 추가하는 텍스트 —>
+        <div class="cruise-text">
+          <div class="title">INDULGE IN THE ULTIMATE WELLNESS ESCAPE AT SEA</div>
+          <div class="body">
+            Hello, gorgeous! Embark on a rejuvenating Cunard" voyage with the exclusive Harper's BAZAAR Wellness at Sea program, featuring three luxurious packages to revitalize skin, body, and mind with tailored spa treatments, nourishing cuisine, inspiring master classes, and premium ELEMIS products. Company&reg;.<br /><br />
+            <strong>Visit CUNARD.COM/HB</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="right-image" src="https://i.imgur.com/Kahndjg.jpeg" alt="Right side image" />
+  </div>
+
+  <!-- 하단 이미지 + 텍스트 -->
+  <div class="bottom-left-container">
+    <img id="bottom-left-img" src="https://i.imgur.com/GOLS5Em.png" alt="Bottom left image" />
+    <div class="bottom-text">
+      <div class="title">MOVE IN SKECHERS COMFORT</div>
+      <div class="body">
+        Hello, gorgeous! Your all-in-one look has arrived: Skechers Hands Free Slip-ins&reg;
+        Glide-Step&reg; x Skechers Apparel. From fab, flattering tops and bottoms to
+        hands-free athletic shoes you can slip on in seconds, these effortless
+        coordinates look and feel amazing. Perfect for high-energy workouts and low-key weekends.
+        The ultimate sport fashion flex, from The Comfort Technology Company&reg;.<br><br>
+        <strong>SKECHERS.COM</strong>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 High Fashion. All rights reserved.
+  <p>JI     MG      JS      HS       DA
+  </footer>
+</body>
+</html>

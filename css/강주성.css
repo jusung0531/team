@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+.wrap{
+    width: 1920px;
+    height: 1080px;
+    
+}
+header{
+    width: 100%;
+    height: 200px;
+}
+header h1{
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 70px;
+    margin-left: 30px;
+}
+.image{
+    width: 1920px;
+    height: auto;
+    position: relative;
+}
+.img1{
+    width: 150px;
+    height: auto;
+    position: absolute; top: -80px;left: 100px;
+    z-index: 100;
+}
+.img1:hover{
+    transform: scale(1.2);
+}
+.img2:hover{
+    transform: scale(1.2);
+}
+.img3:hover{
+    transform: scale(1.2);
+}
+.img4:hover{
+    transform: scale(1.2);
+}
+
+.img2{
+    width: 200px;
+    height: auto;
+    position: absolute; top:-200px; left:600px;
+    z-index: 100;
+}
+.img3{
+    width: 250px;
+    height: auto;
+    z-index: 90;
+    position: absolute; top:200px; left: 400px;
+}
+.img4{
+    width: 400px;
+    height: auto;
+    z-index: 100;
+    position: absolute; top: 100px; left:  800px; 
+}
+.img5{
+    width: 300px;
+    height: auto;
+    position: absolute; top:0;left: 50%; transform: translate(-50%,-50%) ;
+z-index: 100;}
+.img6{
+    width: 400px;
+    height: auto;
+    position: absolute;top:-100px;left: 170px;
+}
+.text1{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    top: -50px;
+}
+.text2{
+    width: 50px;
+    height: 50px;
+    position: absolute; top: 150px;
+    margin-left: 30px;
+
+}
+.text3{
+    width: 50px;
+    height: 50px;
+    position: absolute; top: 270px;
+    margin-left: 30px;
+}
+.text4{
+    width: 50px;
+    height: 50px;
+    position: absolute; top: 407px;
+    margin-left: 30px;
+}
+.text5{
+    width: 50px;
+    height: 50px;
+    position: absolute; 
+    margin-left: 580px;
+    top: 0;
+}
+.text6{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: 580px;
+    top: 130px;
+}
+.text7{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 260px;
+    margin-left: 620px;
+}
+.text8{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 440px;
+    margin-left: 620px;
+}
+.text9
+{
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    margin-left: 800px;
+}
+.text10{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 280px;
+    margin-left: 800px;
+}
+.img7 img{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    right: 30px;
+top: -100px;
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;top: 1000px;
+      color: black;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+      user-select: none;
+
+}
+.footer-extra {
+  position: absolute;
+  bottom: 80px; /* footer 위 */
+ margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.elle-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #000;
+  transition: opacity 0.3s ease;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.elle-link:hover {
+  opacity: 0.7;
+  color: blue;
+
+}
+.footer-extra {
+  position: absolute;
+  bottom: 80px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.shapes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 100px;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: #da0e9c;
+        bottom: -30px;
+
+  position: absolute;
+  left: 170px;
+
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: #62fb09;
+  border-radius: 50%;
+      bottom: -30px;
+  position: absolute;
+  left: 135px;
+
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #00ffd0;
+  position: absolute;
+        bottom: -30px;
+
+  left: 100px;
+
+}
+
+.elle-link-text {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  bottom: 50px;
+  display: block;
+  position: absolute;
+  margin-left: 30px;
+}
+
+.elle-link-text:hover {
+  color: #666;
+}
+
+@media (max-width: 600px) {
+    .link a {
+        flex: 1 1 100px;
+        max-width: 120px;
+    }
+}
+
+

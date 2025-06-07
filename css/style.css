@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+html, body {
+    margin: 0; padding: 0; height: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.wrap {
+    max-width: 1200px;       /* 최대 넓이 지정 */
+    margin: 0 auto;
+    padding: 40px 20px;      /* 위아래 여백 + 좌우 여백 */
+    min-height: 100vh;       /* 화면 전체 높이 최소 확보 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+}
+
+.link {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;               /* 간격 줄임 */
+    align-items: center;
+}
+
+.link a {
+    flex: 1 1 150px;         /* 최소 150px, 유동 크기 */
+    max-width: 200px;        /* 최대 크기 제한 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.link a:hover img {
+    transform: scale(1.1);
+}
+
+/* 반응형 - 화면 600px 이하일 때 이미지 크기 줄임 */
+@media (max-width: 600px) {
+    .link a {
+        flex: 1 1 100px;
+        max-width: 120px;
+    }
+}
+footer{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    text-align: center;
+}

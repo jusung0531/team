@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Editor's Letter - High Fashion</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #2c2c2c;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 1rem;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a:hover {
+      color: #e91e63;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+    }
+
+    header h2 {
+      font-weight: 300;
+      color: #aaa;
+      margin-top: 0.5rem;
+    }
+
+    .wrap {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .magazine {
+      column-count: 2;
+      column-gap: 2.5rem;
+    }
+
+    .magazine p {
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
+    .magazine p::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      line-height: 1;
+      padding-right: 8px;
+      padding-top: 4px;
+      color: #e91e63;
+    }
+
+    .lead {
+      font-size: 1.15rem;
+      font-weight: 500;
+      column-span: all;
+      margin-bottom: 2rem;
+    }
+
+    .con {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .img1, .img2 {
+      flex: 1 1 48%;
+    }
+
+    img {
+      width: 100%;
+      height:800px;           /* 동일한 높이 */
+      object-fit: cover;       /* 이미지 잘리지 않게 유지 */
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    con:hover {
+      transform: scale(1.03);
+      cursor: pointer;
+    }
+
+    footer {
+      background: #f5f5f5;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 3rem;
+    }
+
+    .top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      display: none;
+      z-index: 9999;
+    }
+
+    @media (max-width: 768px) {
+      .magazine {
+        column-count: 1;
+      }
+
+      .con {
+        flex-direction: column;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="https://www.elle.co.kr">Home</a></li>
+    <li><a href="https://www.elle.co.kr/fashion/designers">Features</a></li>
+    <li><a href="https://www.elle.co.kr/horoscopes">Culture</a></li>
+    <li><a href="https://www.elle.co.kr/decor">Subscribe</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Editor's Letter</h1>
+  <h2>High Fashion</h2>
+</header>
+
+<div class="wrap">
+  <div class="magazine">
+    <p class="lead">
+      It all started with a few dance steps. Addison Rae went from LSU student to TikTok sensation, and now, pop star royalty.
+    </p>
+
+    <p>
+      Back in 2019, the cover star of this year’s Women in Music issue, Addison Rae, became a TikTok sensation for her moves. Since then, she’s blossomed into a pop princess, collaborating with Charli XCX and becoming known by just one name. “I feel like I’ve surpassed Addison Rae,” she tells writer Suzy Exposito.
+    </p>
+
+    <p>
+      As Rae proves, the pop-star playbook has changed. While a major-label deal was once essential, this year’s Women in Music lineup includes artists who emerged from YouTube, <em>JazzTok</em>, and even the Disney Channel.
+    </p>
+
+    <p>
+      Fashion and music have always been intertwined — long before Madonna wore her Jean Paul Gaultier cone bra. But today, pop-star aesthetics rival the music itself. Gaby Wilson explores coquettecore’s rise on page 37, while Fawnia Soo Hoo talks to costume designers about retro rock-star flair on page 40.
+    </p>
+
+    <p>
+      Beauty obsessions have shifted too. “Snatched” faces are giving way to plump, youthful contours. Kathleen Hou explores fat grafting and “nature’s filler” in her feature on page 54, where Dr. Lara Devgan explains, “Now we understand that youth is in the fullness of the face.”
+    </p>
+
+    <p>
+      Not ready for fat grafting? Katie Berohn reports on the rise of “microdosing” beauty — from Botox and Ozempic to transdermal vitamin patches as subtle as Zoë Kravitz’s tattoos.
+    </p>
+
+    <p>
+      And there’s a new wave of strength and self-love: “muscle mommies.” Bonnie Tsui’s feature in *On Muscle* shows how strength training empowers women to own their power, physically and mentally.
+    </p>
+  </div>
+
+  <div class="con">
+    <div class="img1">
+      
+        <img src="https://i.imgur.com/Z94YxxG.png" alt="Model in nature" />
+      </a>
+    </div>
+    <div class="img2">
+      
+        <img src="https://i.imgur.com/qA9whmj.png" alt="Chopard Bella Hadid" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2025 High Fashion. All rights reserved.
+</footer>
+
+<button class="top-btn" onclick="scrollToTop()">↑ Top</button>
+
+<script>
+  window.addEventListener('scroll', function () {
+    const btn = document.querySelector('.top-btn');
+    btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
